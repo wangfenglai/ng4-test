@@ -1,3 +1,16 @@
-<h1>
+<h1 >
   {{title}}
 </h1>
+<h2>{{xx}}</h2>
+<button type="button" name="button" (click)="receiveCn()">中文</button>
+<button type="button" name="button" (click)="receiveEng()">english</button>
+<!-- <button type="button" name="button" (click)="httpGet3()">both</button> -->
+<!-- <select id="sel">
+    <option value="cn">中文</option>
+    <option value="eng">英文</option>
+</select> -->
+
+
+<select  [(ngModel)]="student">
+    <option *ngFor = "let item of students" [value]='item'>{{item}}</option>
+</select>
